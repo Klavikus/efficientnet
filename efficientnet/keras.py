@@ -1,4 +1,4 @@
-from . import inject_keras_modules, init_keras_custom_objects
+from . import inject_keras_modules, init_tfkeras_custom_objects
 from . import model
 
 from .preprocessing import center_crop_and_resize
@@ -15,4 +15,4 @@ EfficientNetL2 = inject_keras_modules(model.EfficientNetL2)
 
 preprocess_input = inject_keras_modules(model.preprocess_input)
 
-init_keras_custom_objects()
+init_tfkeras_custom_objects()
